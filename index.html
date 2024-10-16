@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="locationInput" placeholder="Enter location name" />
+        <button id="searchBtn">Search</button>
+
+        <!-- Sorting Options -->
+        <div class="options">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="temp">Temperature</option>
+                <option value="humidity">Humidity</option>
+                <option value="wind">Wind Speed</option>
+            </select>
+        </div>
+
+        <!-- Weather Data Display -->
+        <div id="weatherInfo"></div>
+        
+        <!-- Error Messages -->
+        <div id="error"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
